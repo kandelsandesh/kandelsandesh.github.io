@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <div class="navbar">
+
+        <div class="navbar-left">
+
+            <a href="index.html" class="home-a">
+                <img src="/assets/images/icons/home-white.png" alt="home" height="16" />
+                <span>Home</span>
+            </a>
+
+        </div>
+
+        <div class="navbar-right">
+
+            <a href="login.html">
+                <img src="/assets/images/icons/login.png" alt="about" height="16" />
+                <span>Login</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- contact us -->
+    <div class="contact-form">
+
+        <!-- <h3>Contact</h3> -->
+        <!-- <small>Feel free to contact me</small> -->
+
+        <fieldset>
+            <legend>Login Form</legend>
+            <form onsubmit="return false;">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username...">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password...">
+
+                <button onclick="loginUser();">Login &rarr;</button>
+            </form>
+        </fieldset>
+
+    </div>
+
+    <hr>
+
+    <!-- footer -->
+    <div class="footer">
+        <span>+977 9844875985<br> kandelsandeshgmail.com </span>
+        <span style="float: right;font-weight: 600;">&copy; SANDESH KANDEL</span>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

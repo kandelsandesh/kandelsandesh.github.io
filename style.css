@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navigation bar */
+
+.navbar {
+  display: block;
+  width: 100%;
+  background-color: salmon;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: #15626f;
+}
+
+.navbar-left a img,
+.navbar-right a img {
+  position: relative;
+  top: 2px;
+}
+
+.navbar-left,
+.navbar-right {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.navbar-right a {
+  float: right;
+}
+
+/* banner */
+
+.banner {
+  display: block;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 450px;
+}
+
+
+/* about me */
+.about-me {
+  display: block;
+  background-color: #e2fbff;
+  padding: 40px;
+  overflow: auto;
+}
+
+.my-image {
+  display: block;
+  float: right;
+  margin-left: 10px;
+  box-shadow: 0 0 4px #595959;
+  height: 400px;
+}
+
+
+/* my projects */
+
+.my-projects {
+  display: block;
+  background-color: #e2fbff;
+  padding: 40px;
+  overflow: auto;
+}
+
+.projects-list {
+  margin-top: 20px;
+}
+
+.project-box {
+  display: block;
+  float: left;
+  width: calc(100vw / 3.3);
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #607D8B;
+  color: #ffffff;
+  text-align: justify;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.project-box hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-box .footer {
+  margin-top: 10px;
+}
+
+.project-box a.view-button {
+  display: block;
+  text-align: center;
+  background-color: #e2fbff;
+  box-shadow: inset 0 -4px 0 #93c3ca;
+  padding: 12px;
+  box-sizing: border-box;
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.project-box a.view-button:active {
+  background-color: #93c3ca;
+}
+
+
+/* contact */
+
+.contact-form {
+  display: block;
+  background-color: #e2fbff;
+  padding: 40px;
+  overflow: auto;
+}
+
+form {}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  padding: 10px 6px 6px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+  -webkit-transition: border 0.3s ease-in-out;
+  -moz-transition: border 0.3s ease-in-out;
+  -ms-transition: border 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  border-bottom: 2px solid #67abc2;
+}
+
+button {
+  display: block;
+  float: right;
+  width: auto;
+  cursor: pointer;
+  padding: 10px !important;
+  background-color: #0f434c;
+  color: #fff;
+  margin-top: 10px;
+}
+
+fieldset {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 15px 10px 15px;
+  box-sizing: border-box;
+}
+
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 6px 12px;
+}
+
+/* footer */
+
+.footer {
+  display: block;
+  background-color: #e2fbff;
+  padding: 40px;
+  overflow: auto;
+}
+
+@media screen and (max-width:800px) {
+  .banner{
+    background-image: url(assets/images/sandesh.JPG);
+  }
